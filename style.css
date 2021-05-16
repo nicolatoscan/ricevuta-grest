@@ -28,6 +28,13 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+td {
+    padding: 5px 5px;
+}
+
+select {
+    min-width: 40px;
+}
 
 .totale-cell {
     font-weight: bold;

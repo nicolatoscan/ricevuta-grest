@@ -48,9 +48,11 @@ function calcola() {
         }
         w.querySelector('.prezzo').innerHTML = weekResult <= 0 ? "--" : (weekResult.toFixed(2) + " €")
     }
-    if (document.querySelector('.tessera-noi').checked) {
-        result += 6
-        document.querySelector('.tessera-noi-line .prezzo').innerHTML = "6.00 €"
+    const numeroTessere = document.querySelector('#numero-tessere').options[document.querySelector('#numero-tessere').selectedIndex].text
+    if (numeroTessere > 0) {
+        const costoTessera = 6 * numeroTessere
+        document.querySelector('.tessera-noi-line .prezzo').innerHTML = costoTessera.toFixed(2) + " €"
+        result += costoTessera
     }
     document.querySelector('.totale').innerHTML = result <= 0 ? "--" : (result.toFixed(2) + " €")
 }

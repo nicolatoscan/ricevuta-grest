@@ -1,5 +1,5 @@
 function calcola() {
-    document.querySelector('.prezzo').innerHTML = "--"
+    document.querySelectorAll('.prezzo').forEach(x => x.innerHTML = "--");
     let isAllWeeks = false;
     let weeks = document.querySelectorAll('.week');
     const allWeeks = document.querySelector('.week-all');
@@ -105,6 +105,6 @@ function clearAll() {
     checkboxes.forEach(x => x.checked = false);
     radios.forEach(x => x.checked = false);
     text.forEach(x => x.value = '');
-    selects.forEach(x => x.selectedIndex = 0)
-    console.log(text);
+    selects.forEach(x => x.selectedIndex = 0);
+    calcola();
 }

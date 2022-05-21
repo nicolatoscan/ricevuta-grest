@@ -22,27 +22,27 @@ function calcola() {
             const NRFiglioN = w.querySelector('.NR select').options[w.querySelector('.NR select').selectedIndex].text
             if (giorno) {
                 if (primoFiglio) {
-                    weekResult += 64
+                    weekResult += 56
                 }
                 if (secondoFiglioN > 0) {
-                    weekResult += 47.50 * secondoFiglioN
+                    weekResult += 40 * secondoFiglioN
                 }
                 if (NRFiglioN > 0) {
-                    weekResult += 95 * NRFiglioN
+                    weekResult += 80 * NRFiglioN
                 }
             } else if (pomeriggio) {
                 if (primoFiglio) {
-                    weekResult += 23.5
+                    weekResult += 21
                 }
                 if (secondoFiglioN > 0) {
-                    weekResult += 17.5 * secondoFiglioN
+                    weekResult += 15 * secondoFiglioN
                 }
                 if (NRFiglioN > 0) {
-                    weekResult += 35 * NRFiglioN
+                    weekResult += 30 * NRFiglioN
                 }
             }
             if (isAllWeeks) {
-                weekResult *= 5;
+                weekResult *= 4;
             }
             result += weekResult;
         }

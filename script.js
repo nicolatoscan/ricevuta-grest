@@ -106,5 +106,9 @@ function clearAll() {
     radios.forEach(x => x.checked = false);
     text.forEach(x => x.value = '');
     selects.forEach(x => x.selectedIndex = 0);
+
+    document.querySelectorAll('#pagato').forEach(x => x.checked = false);
+    document.querySelectorAll('#note').forEach(x => x.value = '');
+
     calcola();
 }

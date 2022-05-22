@@ -168,7 +168,15 @@
             <td colspan="6" class="totale-cell">Totale</td>
             <td class="totale">--</td>
         </tr>
+        <tr>
+            <td colspan="6" class="pagato-text">
+                Pagato
+                <input id="pagato" type="checkbox" />
+            </td>
+        </tr>
     </table>
+    <label for="note" class="note-label">Note:</label>
+    <textarea id="note"></textarea>
 
     <button class="no-print" onclick="print()">Stampa</button>
     <button class="no-print" onclick="clearAll()">Reset</button>

@@ -18,10 +18,18 @@ h1 {
     margin-top: 1.5em;
 }
 
-table, input.long {
+table, input.long, label, textarea {
     width: 100%;
     max-width: 1020px;
     margin:auto;
+}
+label.note-label {
+    margin-top: 1em;
+    display: block;
+}
+textarea {
+    display: block;
+    height: 100px;
 }
 
 table, th, td {
@@ -41,6 +49,9 @@ select {
     font-size: 1.5em;
     text-align: right;
     padding: 0 1em;
+}
+.pagato-text {
+    text-align: right;
 }
 .prezzo, .totale {
     text-align: center;

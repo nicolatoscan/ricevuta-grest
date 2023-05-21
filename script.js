@@ -112,3 +112,9 @@ function clearAll() {
 
     calcola();
 }
+
+function stampa() {
+    print()
+    const ricevuta = document.querySelector('#n-ricevuta')
+    ricevuta.value = parseInt(ricevuta?.value) + 1
+}

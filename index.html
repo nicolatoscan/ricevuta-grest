@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iscrizioni Grest 2022</title>
+    <title>Iscrizioni Grest 2023</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,9 +13,9 @@
         Piazza Fietta, 19 <br>
         31017 Fietta di Pieve del Grappa (TV)
     </p>
-    <p>Ricevuta numero: <input type="text"></p>
+    <p>Ricevuta numero: <input id="n-ricevuta" type="number" value="1"></p>
     <p>Data: <script>document.write(new Date().toLocaleDateString())</script></p>
-    <h1>Iscrizioni Grest 2022</h1>
+    <h1>Iscrizioni Grest 2023</h1>
     <p>Iscritti al Grest: <input class="long" type="text"></p>
     <table>
         <tr>
@@ -25,7 +25,7 @@
             <th>Costo</th>
         </tr>
         <tr class="week-1 week">
-            <td><input id="w1a" class="settimana" type="checkbox"/><label for="w1a">1ª  Sett. 4/07—08/07</label></td>
+            <td><input id="w1a" class="settimana" type="checkbox"/><label for="w1a">1ª  Sett. 3/07—7/07</label></td>
             <td><input id="w1b" class="giorno" type="radio" name="radio-w1"/><label for="w1b"> 7.30/17.30</label></td>
             <td><input id="w1c" class="pomeriggio" type="radio" name="radio-w1"/><label for="w1c"> 13.30/17.30</label></td>
             <td><input id="w1d" class="I" type="checkbox" /><label for="w1d">I</label></td>
@@ -50,7 +50,7 @@
             <td class="prezzo"> --</td>
         </tr>
         <tr class="week-2 week">
-            <td><input id="w2a" class="settimana" type="checkbox" /><label for="w2a">2ª  Sett. 11/07—15/07</label></td>
+            <td><input id="w2a" class="settimana" type="checkbox" /><label for="w2a">2ª  Sett. 10/07—14/07</label></td>
             <td><input id="w2b" class="giorno" type="radio" name="radio-w2"/><label for="w2b"> 7.30/17.30</label></td>
             <td><input id="w2c" class="pomeriggio" type="radio" name="radio-w2"/><label for="w2c"> 13.30/17.30</label></td>
             <td><input id="w2d" class="I" type="checkbox" /><label for="w2d">I</label></td>
@@ -75,7 +75,7 @@
             <td class="prezzo">--</td>
         </tr>
         <tr class="week-3 week">
-            <td><input id="w3a" class="settimana" type="checkbox" /><label for="w3a">3ª  Sett. 18/07—22/07</label></td>
+            <td><input id="w3a" class="settimana" type="checkbox" /><label for="w3a">3ª  Sett. 17/07—21/07</label></td>
             <td><input id="w3b" class="giorno" type="radio" name="radio-w3"/><label for="w3b"> 7.30/17.30</label></td>
             <td><input id="w3c" class="pomeriggio" type="radio" name="radio-w3"/><label for="w3c"> 13.30/17.30</label></td>
             <td><input id="w3d" class="I" type="checkbox" /><label for="w3d">I</label></td>
@@ -100,7 +100,7 @@
             <td class="prezzo"> --</td>
         </tr>
         <tr class="week-4 week">
-            <td><input id="w4a" class="settimana" type="checkbox" /><label for="w4a">4ª  Sett. 25/07—29/07</label></td>
+            <td><input id="w4a" class="settimana" type="checkbox" /><label for="w4a">4ª  Sett. 24/07—28/07</label></td>
             <td><input id="w4b" class="giorno" type="radio" name="radio-w4"/><label for="w4b"> 7.30/17.30</label></td>
             <td><input id="w4c" class="pomeriggio" type="radio" name="radio-w4"/><label for="w4c"> 13.30/17.30</label></td>
             <td><input id="w4d" class="I" type="checkbox" /><label for="w4d">I</label></td>
@@ -178,7 +178,7 @@
     <label for="note" class="note-label">Note:</label>
     <textarea id="note"></textarea>
 
-    <button class="no-print" onclick="print()">Stampa</button>
+    <button class="no-print" onclick="stampa()">Stampa</button>
     <button class="no-print" onclick="clearAll()">Reset</button>
 
     <script src="script.js?v2"></script>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iscrizioni Grest 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Circolo NOI Sant'Andrea</h3>
+    <p>
+        Piazza Fietta, 19 <br>
+        31017 Fietta di Pieve del Grappa (TV)
+    </p>
+    <p>Ricevuta numero: <input id="n-ricevuta" type="number" value="1"></p>
+    <p>Data: <script>document.write(new Date().toLocaleDateString())</script></p>
+    <h1>Iscrizioni Grest 2024</h1>
+    <p>Iscritti al Grest: <input class="long" type="text"></p>
+    <table>
+        <tr>
+            <th>Settimana</th>
+            <th colspan="2">Orario</th>
+            <th colspan="3">Figli</th>
+            <th>Costo</th>
+        </tr>
+        <tr class="week-1 week">
+            <td><input id="w1a" class="settimana" type="checkbox"/><label for="w1a">1ª  Sett. 3/07—7/07</label></td>
+            <td><input id="w1b" class="giorno" type="radio" name="radio-w1"/><label for="w1b"> 7.30/17.30</label></td>
+            <td><input id="w1c" class="pomeriggio" type="radio" name="radio-w1"/><label for="w1c"> 13.30/17.30</label></td>
+            <td><input id="w1d" class="I" type="checkbox" /><label for="w1d">I</label></td>
+            <td class="II">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">II</label>
+            </td>
+            <td class="NR">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">NR</label>
+            </td>
+            <td class="prezzo"> --</td>
+        </tr>
+        <tr class="week-2 week">
+            <td><input id="w2a" class="settimana" type="checkbox" /><label for="w2a">2ª  Sett. 10/07—14/07</label></td>
+            <td><input id="w2b" class="giorno" type="radio" name="radio-w2"/><label for="w2b"> 7.30/17.30</label></td>
+            <td><input id="w2c" class="pomeriggio" type="radio" name="radio-w2"/><label for="w2c"> 13.30/17.30</label></td>
+            <td><input id="w2d" class="I" type="checkbox" /><label for="w2d">I</label></td>
+            <td class="II">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">II</label>
+            </td>
+            <td class="NR">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">NR</label>
+            </td>
+            <td class="prezzo">--</td>
+        </tr>
+        <tr class="week-3 week">
+            <td><input id="w3a" class="settimana" type="checkbox" /><label for="w3a">3ª  Sett. 17/07—21/07</label></td>
+            <td><input id="w3b" class="giorno" type="radio" name="radio-w3"/><label for="w3b"> 7.30/17.30</label></td>
+            <td><input id="w3c" class="pomeriggio" type="radio" name="radio-w3"/><label for="w3c"> 13.30/17.30</label></td>
+            <td><input id="w3d" class="I" type="checkbox" /><label for="w3d">I</label></td>
+            <td class="II">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">II</label>
+            </td>
+            <td class="NR">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">NR</label>
+            </td>
+            <td class="prezzo"> --</td>
+        </tr>
+        <tr class="week-4 week">
+            <td><input id="w4a" class="settimana" type="checkbox" /><label for="w4a">4ª  Sett. 24/07—28/07</label></td>
+            <td><input id="w4b" class="giorno" type="radio" name="radio-w4"/><label for="w4b"> 7.30/17.30</label></td>
+            <td><input id="w4c" class="pomeriggio" type="radio" name="radio-w4"/><label for="w4c"> 13.30/17.30</label></td>
+            <td><input id="w4d" class="I" type="checkbox" /><label for="w4d">I</label></td>
+            <td class="II">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">II</label>
+            </td>
+            <td class="NR">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">NR</label>
+            </td>
+            <td class="prezzo"> --</td>
+        </tr>
+        <tr class="week-all">
+            <td><input id="waa" class="settimana" type="checkbox" /><label for="waa">Tutte le settimane</label></td>
+            <td><input id="wab" class="giorno" type="radio" name="radio-w5"/><label for="wab"> 7.30/17.30</label></td>
+            <td><input id="wac" class="pomeriggio" type="radio" name="radio-w5"/><label for="wac"> 13.30/17.30</label></td>
+            <td><input id="wad" class="I" type="checkbox" /><label for="wad">I</label></td>
+            <td class="II">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">II</label>
+            </td>
+            <td class="NR">
+                <select>
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select>
+                <label for="">NR</label>
+            </td>
+            <td class="prezzo"> --</td>
+        </tr>
+        <tr class="tessera-noi-line">
+        <td colspan="3">
+            <label>Tessera NOI RAGAZZI</label>
+        </td>
+        <td colspan="3">
+            <select id="numero-tessere">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select>
+            <label>Numero tessere</label>
+        </td>
+        <td class="prezzo"> --</td>
+        <tr>
+            <td colspan="6" class="totale-cell">Totale</td>
+            <td class="totale">--</td>
+        </tr>
+        <tr>
+            <td colspan="6" class="pagato-text">
+                Pagato
+                <input id="pagato" type="checkbox" />
+            </td>
+        </tr>
+    </table>
+    <label for="note" class="note-label">Note:</label>
+    <textarea id="note"></textarea>
+
+    <button class="no-print" onclick="stampa()">Stampa</button>
+    <button class="no-print" onclick="clearAll()">Reset</button>
+
+    <script src="grest.js"></script>
+</body>
+</html>

@@ -38,6 +38,7 @@ function calcola() {
             const orario2 = w.querySelector('.orario2').checked
             const orario3 = w.querySelector('.orario3').checked
             const orario4 = w.querySelector('.orario4').checked
+            const pulmino = w.querySelector('.pul').checked
             const primoFiglio = w.querySelector('.I').checked
             const secondoFiglioN = w.querySelector('.II select').options[w.querySelector('.II select').selectedIndex].text
             const NRFiglioN = w.querySelector('.NR select').options[w.querySelector('.NR select').selectedIndex].text
@@ -47,13 +48,6 @@ function calcola() {
             )
             
             if (costo) {
-
-                console.clear()
-                console.log(costo);
-                console.log(costo.primoFiglio);
-                console.log(costo.secondoFiglio, secondoFiglioN, );
-                console.log(costo.NRFiglio, NRFiglioN);
-
                 if (primoFiglio) {
                     weekResult += costo.primoFiglio
                 }
@@ -64,13 +58,18 @@ function calcola() {
                     weekResult += costo.NRFiglio * NRFiglioN
                 }
             }
+
+            if (pulmino) {
+                weekResult += (isAllWeeks ? 20 : 10) * (+NRFiglioN + (+secondoFiglioN) + (primoFiglio ? 1 : 0))
+            }
+
             result += weekResult;
         }
         w.querySelector('.prezzo').innerHTML = weekResult <= 0 ? "--" : (weekResult.toFixed(2) + " €")
     }
     const numeroTessere = document.querySelector('#numero-tessere').options[document.querySelector('#numero-tessere').selectedIndex].text
     if (numeroTessere > 0) {
-        const costoTessera = 6 * numeroTessere
+        const costoTessera = 10 * numeroTessere
         document.querySelector('.tessera-noi-line .prezzo').innerHTML = costoTessera.toFixed(2) + " €"
         result += costoTessera
     }

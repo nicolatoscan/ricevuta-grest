@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iscrizioni Grest 2024</title>
+    <title>Iscrizioni LEAH 2024</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3>Circolo NOI Sant'Andrea</h3>
+    <h3>Parrochia Annunciazione della Beata Vergine Maria</h3>
     <p>
-        Piazza Fietta, 19 <br>
-        31017 Fietta di Pieve del Grappa (TV)
+        Piazza Madonnina del Grappa, 4<br>
+        31017 Paderno di Pieve del Grappa (TV)
     </p>
     <p>Ricevuta numero: <input id="n-ricevuta" type="number" value="1"></p>
     <p>Data: <script>document.write(new Date().toLocaleDateString())</script></p>
-    <h1>Iscrizioni Grest 2023</h1>
-    <p>Iscritti al Grest: <input class="long" type="text"></p>
+    <h1>Iscrizioni LEAH 2024</h1>
+    <p>Iscritti al LEAH: <input class="long" type="text"></p>
     <table>
         <tr>
             <th>Settimana</th>
-            <th colspan="2">Orario</th>
+            <th colspan="4">Orario</th>
             <th colspan="3">Figli</th>
+            <th>Pulmino</th>
             <th>Costo</th>
         </tr>
         <tr class="week-1 week">
@@ -49,6 +50,7 @@
                 </select>
                 <label for="">NR</label>
             </td>
+            <td><input id="w1pul" class="pul" type="checkbox" /></td>
             <td class="prezzo"> --</td>
         </tr>
         <tr class="week-2 week">
@@ -76,6 +78,7 @@
                 </select>
                 <label for="">NR</label>
             </td>
+            <td><input id="w2pul" class="pul" type="checkbox" /></td>
             <td class="prezzo">--</td>
         </tr>
         <tr class="week-3 week">
@@ -103,6 +106,7 @@
                 </select>
                 <label for="">NR</label>
             </td>
+            <td><input id="w3pul" class="pul" type="checkbox" /></td>
             <td class="prezzo"> --</td>
         </tr>
         <tr class="week-4 week">
@@ -130,6 +134,7 @@
                 </select>
                 <label for="">NR</label>
             </td>
+            <td><input id="w4pul" class="pul" type="checkbox" /></td>
             <td class="prezzo"> --</td>
         </tr>
         <tr class="week-all">
@@ -157,11 +162,12 @@
                 </select>
                 <label for="">NR</label>
             </td>
+            <td><input id="wapul" class="pul" type="checkbox" /></td>
             <td class="prezzo"> --</td>
         </tr>
         <tr class="tessera-noi-line">
         <td colspan="3">
-            <label>Tessera NOI RAGAZZI</label>
+            <label>Quota iscrizione (se non iscritto al doposcuola)</label>
         </td>
         <td colspan="3">
             <select id="numero-tessere">
@@ -171,7 +177,7 @@
                 <option>3</option>
                 <option>4</option>
             </select>
-            <label>Numero tessere</label>
+            <label>Numero quote</label>
         </td>
         <td class="prezzo"> --</td>
         <tr>
